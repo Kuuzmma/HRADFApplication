@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="AppModule"
+  Version="12.2.1.22.48"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true">
+  <ViewUsage
+    Name="DepartmentsView1"
+    ViewObjectName="model.vo.DepartmentsView"/>
+  <ViewUsage
+    Name="DepartmentsViewManager100"
+    ViewObjectName="model.vo.DepartmentsView">
+    <ViewCriteriaUsage
+      Name="DepartmentsViewCriteriaManager100"
+      FullName="model.vo.DepartmentsView.DepartmentsViewCriteriaManager100"/>
+  </ViewUsage>
+  <ViewUsage
+    Name="DepartmentsViewManager200"
+    ViewObjectName="model.vo.DepartmentsView">
+    <ViewCriteriaUsage
+      Name="DepartmentsViewCriteriaManager200"
+      FullName="model.vo.DepartmentsView.DepartmentsViewCriteriaManager200"/>
+  </ViewUsage>
+  <ViewUsage
+    Name="EmployeesView1"
+    ViewObjectName="model.vo.EmployeesView"/>
+  <ViewLinkUsage
+    Name="DeptLinkEmp1"
+    ViewLinkObjectName="model.vo.DeptLinkEmp"
+    SrcViewUsageName="model.eo.AppModule.DepartmentsView1"
+    DstViewUsageName="model.eo.AppModule.EmployeesView1"
+    Reversed="false"/>
+</AppModule>
