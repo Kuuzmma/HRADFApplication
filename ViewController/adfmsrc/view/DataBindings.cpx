@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.22.48" id="DataBindings"
              SeparateXMLFiles="false" Package="view" ClientType="Generic">
+  <definitionFactories>
+    <factory nameSpace="http://xmlns.oracle.com/adf/controller/binding"
+             className="oracle.adf.controller.internal.binding.TaskFlowBindingDefFactoryImpl"/>
+    <dtfactory className="oracle.adf.controller.internal.dtrt.binding.BindingDTObjectFactory"/>
+  </definitionFactories>
   <pageMap>
     <page path="/departments.jsf" usageId="view_departmentsPageDef"/>
+    <page path="/emp.jsff" usageId="view_empPageDef"/>
+    <page path="/dept.jsff" usageId="view_deptPageDef"/>
+    <page path="/main.jsf" usageId="view_mainPageDef"/>
+    <page path="/EmpTrain.jsff" usageId="view_EmpTrainPageDef"/>
+    <page path="/DeptTrain.jsff" usageId="view_DeptTrainPageDef"/>
+    <page path="/TrainPage.jsf" usageId="view_TrainPagePageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="view_departmentsPageDef" path="view.pageDefs.departmentsPageDef"/>
+    <page id="view_empPageDef" path="view.pageDefs.empPageDef"/>
+    <page id="view_deptPageDef" path="view.pageDefs.deptPageDef"/>
+    <page id="view_mainPageDef" path="view.pageDefs.mainPageDef"/>
+    <page id="view_EmpTrainPageDef" path="view.pageDefs.EmpTrainPageDef"/>
+    <page id="view_DeptTrainPageDef" path="view.pageDefs.DeptTrainPageDef"/>
+    <page id="view_TrainPagePageDef" path="view.pageDefs.TrainPagePageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <BC4JDataControl id="AppModuleDataControl" Package="model.eo"

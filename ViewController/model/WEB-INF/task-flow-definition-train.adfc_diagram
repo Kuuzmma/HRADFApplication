@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <View
+      id="View2">
+      <property
+         name="activityId">EmpTrain</property>
+      <property
+         name="pageFragment">true</property>
+      <property
+         name="start">true</property>
+      <property
+         name="x">214.0</property>
+      <property
+         name="y">210.89648</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>EmpTrain&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="page">/EmpTrain.jsff</property>
+      <property
+         name="trainStop">true</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+   <View
+      id="View3">
+      <property
+         name="activityId">DeptTrain</property>
+      <property
+         name="pageFragment">true</property>
+      <property
+         name="x">366.0</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>DeptTrain&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">195.29883</property>
+      <property
+         name="page">/DeptTrain.jsff</property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="trainStop">true</property>
+   </View>
+   <TrainFlow
+      islink="true"
+      id="TrainFlow4"
+      from="View2"
+      to="View3">
+      <property
+         name="sdm:polyPoints">R50,255.0,210.5459,325.0,194.94824,L50</property>
+   </TrainFlow>
+</SDM>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.22.48" id="DeptTrainPageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="DepartmentsViewManager200" RangeSize="25" DataControl="AppModuleDataControl"
+              id="DepartmentsViewManager200Iterator"/>
+  </executables>
+  <bindings>
+    <listOfValues IterBinding="DepartmentsViewManager200Iterator" StaticList="false" Uses="LOV_ManagerId"
+                  id="ManagerId"/>
+    <listOfValues IterBinding="DepartmentsViewManager200Iterator" StaticList="false" Uses="LOV_LocationId"
+                  id="LocationId"/>
+    <attributeValues IterBinding="DepartmentsViewManager200Iterator" id="DepartmentId">
+      <AttrNames>
+        <Item Value="DepartmentId"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="DepartmentsViewManager200Iterator" id="DepartmentName">
+      <AttrNames>
+        <Item Value="DepartmentName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="DepartmentsViewManager200Iterator" id="TLocationName">
+      <AttrNames>
+        <Item Value="TLocationName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="DepartmentsViewManager200Iterator" id="TFirstName">
+      <AttrNames>
+        <Item Value="TFirstName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="DepartmentsViewManager200Iterator" id="TLastName">
+      <AttrNames>
+        <Item Value="TLastName"/>
+      </AttrNames>
+    </attributeValues>
+    <action IterBinding="DepartmentsViewManager200Iterator" id="First" RequiresUpdateModel="true" Action="first"/>
+    <action IterBinding="DepartmentsViewManager200Iterator" id="Previous" RequiresUpdateModel="true" Action="previous"/>
+    <action IterBinding="DepartmentsViewManager200Iterator" id="Next" RequiresUpdateModel="true" Action="next"/>
+    <action IterBinding="DepartmentsViewManager200Iterator" id="Last" RequiresUpdateModel="true" Action="last"/>
+  </bindings>
+</pageDefinition>
