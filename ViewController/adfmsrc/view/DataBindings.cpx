@@ -7,13 +7,25 @@
     <dtfactory className="oracle.adf.controller.internal.dtrt.binding.BindingDTObjectFactory"/>
   </definitionFactories>
   <pageMap>
-    <page path="/departments.jsf" usageId="view_departmentsPageDef"/>
-    <page path="/emp.jsff" usageId="view_empPageDef"/>
-    <page path="/dept.jsff" usageId="view_deptPageDef"/>
-    <page path="/main.jsf" usageId="view_mainPageDef"/>
-    <page path="/EmpTrain.jsff" usageId="view_EmpTrainPageDef"/>
-    <page path="/DeptTrain.jsff" usageId="view_DeptTrainPageDef"/>
-    <page path="/TrainPage.jsf" usageId="view_TrainPagePageDef"/>
+    <page path="/OldPages/departments.jsf" usageId="view_departmentsPageDef"/>
+    <page path="/OldPages/emp.jsff" usageId="view_empPageDef"/>
+    <page path="/OldPages/dept.jsff" usageId="view_deptPageDef"/>
+    <page path="/OldPages/main.jsf" usageId="view_mainPageDef"/>
+    <page path="/OldPages/EmpTrain.jsff" usageId="view_EmpTrainPageDef"/>
+    <page path="/OldPages/DeptTrain.jsff" usageId="view_DeptTrainPageDef"/>
+    <page path="/OldPages/TrainPage.jsf" usageId="view_TrainPagePageDef"/>
+    <page path="/WEB-INF/task-flow-definition-transaction.xml#task-flow-definition-transaction@CreateInsert"
+          usageId="view_task_flow_definition_transaction_task_flow_definition_transaction_CreateInsertPageDef"/>
+    <page path="/OldPages/NewDept.jsff" usageId="view_NewDeptPageDef"/>
+    <page path="/OldPages/NewEmp.jsff" usageId="view_NewEmpPageDef"/>
+    <page path="/OldPages/NewEmps.jsff" usageId="view_NewEmpsPageDef"/>
+    <page path="/OldPages/NewDeptSummary.jsff" usageId="view_NewDeptSummaryPageDef"/>
+    <page path="/OldPages/Transaction.jsf" usageId="view_TransactionPageDef"/>
+    <page path="/deptUseTemplate.jsf" usageId="view_deptUseTemplatePageDef"/>
+    <page path="/untitled1.jsf" usageId="view_untitled1PageDef"/>
+    <page path="/EmpUseTemplate.jsf" usageId="view_EmpUseTemplatePageDef"/>
+    <page path="/uiComponents.jsf" usageId="view_uiComponentsPageDef"/>
+    <page path="/DataControl.jsf" usageId="view_DataControlPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="view_departmentsPageDef" path="view.pageDefs.departmentsPageDef"/>
@@ -23,6 +35,18 @@
     <page id="view_EmpTrainPageDef" path="view.pageDefs.EmpTrainPageDef"/>
     <page id="view_DeptTrainPageDef" path="view.pageDefs.DeptTrainPageDef"/>
     <page id="view_TrainPagePageDef" path="view.pageDefs.TrainPagePageDef"/>
+    <page id="view_task_flow_definition_transaction_task_flow_definition_transaction_CreateInsertPageDef"
+          path="view.pageDefs.task_flow_definition_transaction_task_flow_definition_transaction_CreateInsertPageDef"/>
+    <page id="view_NewDeptPageDef" path="view.pageDefs.NewDeptPageDef"/>
+    <page id="view_NewEmpPageDef" path="view.pageDefs.NewEmpPageDef"/>
+    <page id="view_NewEmpsPageDef" path="view.pageDefs.NewEmpsPageDef"/>
+    <page id="view_NewDeptSummaryPageDef" path="view.pageDefs.NewDeptSummaryPageDef"/>
+    <page id="view_TransactionPageDef" path="view.pageDefs.TransactionPageDef"/>
+    <page id="view_deptUseTemplatePageDef" path="view.pageDefs.deptUseTemplatePageDef"/>
+    <page id="view_untitled1PageDef" path="view.pageDefs.untitled1PageDef"/>
+    <page id="view_EmpUseTemplatePageDef" path="view.pageDefs.EmpUseTemplatePageDef"/>
+    <page id="view_uiComponentsPageDef" path="view.pageDefs.uiComponentsPageDef"/>
+    <page id="view_DataControlPageDef" path="view.pageDefs.DataControlPageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <BC4JDataControl id="AppModuleDataControl" Package="model.eo"

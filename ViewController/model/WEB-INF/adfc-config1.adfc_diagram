@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <View
+      id="View2">
+      <property
+         name="activityId">DeptUseTemplate</property>
+      <property
+         name="x">262.5</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>DeptUseTemplate&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">294.09766</property>
+      <property
+         name="page">/untitled1.jsf</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+   <View
+      id="View3">
+      <property
+         name="activityId">EmpUseTemplate</property>
+      <property
+         name="x">575.0176</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>EmpUseTemplate&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">288.09766</property>
+      <property
+         name="page">/EmpUseTemplate.jsf</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+   <WildcardControlFlowRule
+      id="WildcardControlFlowRule4">
+      <property
+         name="activityId">*</property>
+      <property
+         name="x">434.0</property>
+      <property
+         name="y">111.29883</property>
+   </WildcardControlFlowRule>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase5"
+      from="WildcardControlFlowRule4"
+      to="View2">
+      <property
+         name="fromOutcome">GoToDeptTemp</property>
+      <property
+         name="sdm:polyPoints">L50,398.0,111.44824,262.5,239.74707,T50</property>
+   </ControlFlowCase>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase6"
+      from="WildcardControlFlowRule4"
+      to="View3">
+      <property
+         name="fromOutcome">GoToEmpTemp</property>
+      <property
+         name="sdm:polyPoints">R50,470.0,111.44824,575.0176,233.74707,T50</property>
+   </ControlFlowCase>
+</SDM>

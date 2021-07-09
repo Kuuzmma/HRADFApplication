@@ -30,11 +30,11 @@
       <property
          name="pageFragment">true</property>
       <property
-         name="x">366.0</property>
+         name="x">403.0</property>
       <property
          name="description">&lt;html>&lt;p>&lt;b>DeptTrain&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
       <property
-         name="y">195.29883</property>
+         name="y">204.89648</property>
       <property
          name="page">/DeptTrain.jsff</property>
       <property
@@ -48,6 +48,48 @@
       from="View2"
       to="View3">
       <property
-         name="sdm:polyPoints">R50,255.0,210.5459,325.0,194.94824,L50</property>
+         name="sdm:polyPoints">R50,255.0,210.5459,362.0,204.5459,L50</property>
    </TrainFlow>
+   <TaskFlowCall
+      id="TaskFlowCall5">
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>task-flow-definition-bounded&lt;/b>&lt;/p>&lt;p>Activity Type:  Task Flow Call&lt;/p></property>
+      <property
+         name="trainStop">true</property>
+      <property
+         name="activityId">task-flow-definition-bounded</property>
+      <property
+         name="x">580.04395</property>
+      <property
+         name="y">203.44824</property>
+      <property
+         name="documentReference">/WEB-INF/task-flow-definition-bounded.xml</property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="taskFlowId">task-flow-definition-bounded</property>
+   </TaskFlowCall>
+   <TrainFlow
+      islink="true"
+      id="TrainFlow6"
+      from="View3"
+      to="TaskFlowCall5">
+      <property
+         name="sdm:polyPoints">R50,444.0,204.5459,539.04395,203.09766,L50</property>
+   </TrainFlow>
+   <TaskFlowReturn
+      id="TaskFlowReturn9">
+      <property
+         name="activityId">taskFlowReturn1</property>
+      <property
+         name="x">762.0</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>taskFlowReturn1&lt;/b>&lt;/p>&lt;p>Activity Type:  Task Flow Return&lt;/p>&lt;p>Outcome:  taskFlowReturn1&lt;/p></property>
+      <property
+         name="y">132.89648</property>
+      <property
+         name="finish">true</property>
+      <property
+         name="exceptionHandler">false</property>
+   </TaskFlowReturn>
 </SDM>

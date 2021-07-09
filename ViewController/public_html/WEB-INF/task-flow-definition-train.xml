@@ -6,17 +6,29 @@
       <shared/>
     </data-control-scope>
     <view id="EmpTrain">
-      <page>/EmpTrain.jsff</page>
+      <page>/OldPages/EmpTrain.jsff</page>
       <train-stop>
         <display-name>Employees</display-name>
       </train-stop>
     </view>
     <view id="DeptTrain">
-      <page>/DeptTrain.jsff</page>
+      <page>/OldPages/DeptTrain.jsff</page>
       <train-stop>
         <display-name>Department</display-name>
       </train-stop>
     </view>
+    <task-flow-call id="task-flow-definition-bounded">
+      <task-flow-reference>
+        <document>/WEB-INF/task-flow-definition-bounded.xml</document>
+        <id>task-flow-definition-bounded</id>
+      </task-flow-reference>
+      <train-stop/>
+    </task-flow-call>
+    <task-flow-return id="taskFlowReturn1">
+      <outcome>
+        <name>taskFlowReturn1</name>
+      </outcome>
+    </task-flow-return>
     <train/>
     <use-page-fragments/>
   </task-flow-definition>
